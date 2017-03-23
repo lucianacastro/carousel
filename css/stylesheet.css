@@ -66,17 +66,18 @@ img {
 
 .arrow {
 	position: absolute;
-	font-size: 16px;
+	font-size: 20px;
+	color: grey;
 	
 }
 
 .left-arrow {
-	left: 70px;
+	left: 15px;
 
 }
 
 .right-arrow {
-	right: 70px;
+	right: 15px;
 }
 
 
@@ -88,7 +89,7 @@ img {
 	overflow: hidden;
 	box-sizing: border-box;
 	margin: 0 auto;
-	margin-top: 10%;
+	margin-top: 130px;
 
 	
 }
@@ -98,7 +99,7 @@ img {
 	asborder: 1px solid red;
 	overflow: hidden;
 	z-index: 10;
-	margin-top: 25px;
+	
 }
 
 .button {
@@ -113,7 +114,35 @@ img {
 }
 
 
+@media(max-width: 1024px) {
+	.arrow {
+		font-size: 16px;
+		color: white;
+		top: 40%;
+	}
 
 
+	.buttons-container {
+		
+		margin-top: 70px;
+	}
+}
 
+@media(max-width: 760px) {
+
+.buttons-container {
+		
+		margin-top: 0px;
+	}
+
+}
+
+@media(max-width: 600px) {
+
+.buttons-container {
+		
+		margin-top: -35px;
+	}
+
+}
 
