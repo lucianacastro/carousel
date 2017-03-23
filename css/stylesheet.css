@@ -20,18 +20,19 @@ header {
 	max-width: 900px;
 	height: 250px;
 	overflow: hidden;
-	border: 1px solid black;
+	asborder: 1px solid black;
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 .carousel-container {
 	width: 400%;
 	overflow: hidden;
-	border: 1px solid red;
+	asborder: 1px solid red;
 	box-sizing: border-box;
 	padding: 0;
-	margin: 0;
-	margin-left: -100%;
+	margin: 0 auto;
+	transition: margin-left 600ms ease-out;
 }
 
 ul {
@@ -53,12 +54,42 @@ img {
 	width: 100%;
 }
 
+
+.arrows-container {
+	width: 100%;
+	margin: 0 auto;
+	assborder: 1px solid green;
+	overflow: hidden;
+	margin-top: -15%;
+	box-sizing: border-box;
+}
+
+.arrow {
+	position: absolute;
+	font-size: 16px;
+	
+}
+
+.left-arrow {
+	left: 70px;
+
+}
+
+.right-arrow {
+	right: 70px;
+}
+
+
 .buttons-container {
-	position: relative;
-	width: 900px;
+	position: absolute;
+	width: 100%;
+	max-width: 960px;
 	asborder: 1px solid black;
 	overflow: hidden;
 	box-sizing: border-box;
+	margin: 0 auto;
+	margin-top: 10%;
+
 	
 }
 .buttons {
@@ -67,7 +98,7 @@ img {
 	asborder: 1px solid red;
 	overflow: hidden;
 	z-index: 10;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 .button {
