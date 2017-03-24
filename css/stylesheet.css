@@ -122,8 +122,9 @@ img {
 @media(max-width: 1024px) {
 	.arrow {
 		font-size: 16px;
-		color: white;
 		top: 40%;
+		width: 18px;
+		height: 18px;
 	}
 
 
