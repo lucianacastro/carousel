@@ -67,7 +67,12 @@ img {
 .arrow {
 	position: absolute;
 	font-size: 20px;
-	color: grey;
+	color: white;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: grey; 
+	text-align: center;
 	
 }
 
