@@ -1,30 +1,12 @@
-var i = 0;
+//Usamos el plugin, lo llamamos pasandole las urls.
 
 $(document).ready(function(){
 
-	$('.right-arrow').on('click', function(){
-		if (i <= 2) {
-			i ++;
-			console.log(i); 
-			var margin = i * -100;
-			$('.carousel-container').css('margin-left', margin + '%')
-		}
-	});
-
-	$('.left-arrow').on('click', function(){
-		if (i > 0) {
-			i --;
-			console.log(i); 
-			var margin = i * -100;
-			$('.carousel-container').css('margin-left', margin + '%')
-		}		
-	});
-
-	$('.button').on('click', function(){
-		i = $(this).index();
-		var margin = i * -100;
-		$('.carousel-container').css('margin-left', margin + '%');
-	});
-
+	$('.carousel-container').carousel([
+		'images/buenos-aires.jpg', 
+		'images/castillo-caltanazor.jpeg',
+		'images/iguazu.jpg',
+		'images/sm-andes.jpg',
+	]);
 
 });
