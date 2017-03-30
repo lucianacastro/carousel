@@ -2,7 +2,7 @@
 
 (function($) { 
 	$.fn.carousel = function(listaUrls) {
-		var self = this; //agregamos la variable sel para poder usarla en el forEach
+		var self = this; //agregamos la variable self para poder usarla en el forEach
 		self.addClass('carousel'); //aca podriamos usar this
 		self.html(`
 			<div class="slides-container">
